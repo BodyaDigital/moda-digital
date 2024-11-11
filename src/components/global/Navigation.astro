@@ -3,16 +3,17 @@
     <div class="w-full mx-auto">
       <div
         x-data="{ open: false }"
-        class="relative flex flex-col w-full p-3 mx-auto bg-white ring-1 uppercase ring-zinc-200 backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
+        class="relative flex flex-col w-full p-3 mx-auto ring-1 uppercase ring-zinc-200 backdrop-blur-md backdrop-filter bg-white/70 rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
       >
         <div
           class="flex flex-row items-center justify-between md:justify-start"
         >
           <a
             class="text-black hover:text-black/50 gap-4 items-center tracking-tighter inline-flex font-bold ml-2 text-xl"
-            href="/" title="linke to main page"
+            href="/"
+            title="linke to main page"
           >
-           Moda Digital
+            Moda Digital
           </a><button
             @click="open = !open"
             class="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-cyan-300 focus:outline-none focus:text-black md:hidden"
@@ -27,13 +28,15 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"></path><path
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path><path
                 :class="{'hidden': !open, 'inline-flex': open }"
                 class="hidden"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"></path></svg
+                d="M6 18L18 6M6 6l12 12"
+              ></path></svg
             ></button
           >
         </div><nav
@@ -52,15 +55,35 @@
               >
             </li>
             <li>
-              <a href="#work" class="hover:text-black shrink-0"> Work</a>
+              <a
+                href="#work"
+                class="hover:text-black shrink-0"
+              >
+                Work</a
+              >
             </li>
             <li>
-              <a href="#how" class="hover:text-black shrink-0"> How it works</a>
+              <a
+                href="#how"
+                class="hover:text-black shrink-0"
+              >
+                How it works</a
+              >
             </li>
             <li>
-              <a href="#pricing" class="hover:text-black shrink-0"> Plans</a>
+              <a
+                href="#pricing"
+                class="hover:text-black shrink-0"
+              >
+                Plans</a
+              >
             </li><li>
-              <a href="#faq" class="hover:text-black shrink-0"> Faq</a>
+              <a
+                href="#faq"
+                class="hover:text-black shrink-0"
+              >
+                Faq</a
+              >
             </li><li class="shrink-0">
               <a
                 href="https://calendly.com/bodya-modadigital/30min"
